@@ -1,0 +1,154 @@
+body {
+    background: #303e44;
+}
+body {
+    animation: colorchange 10s;
+    -webkit-animation: colorchange 10s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    color: #fff;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: #fff;
+    width: 400px;
+    margin-bottom: -5px;
+    margin-top: -10px;
+}
+
+@keyframes colorchange
+{
+    0%   {background: #145A32;}
+    20%  {background: #196F3D;}
+    40%  {background: #1E8449;}
+    60%  {background: #28B463;}
+    80%  {background: #229954;}
+    100% {background: #27AE60;}
+}
+
+@keyframes colorchange
+{
+    0%   {background: #145A32;}
+    20%  {background: #196F3D;}
+    40%  {background: #1E8449;}
+    60%  {background: #28B463;}
+    80%  {background: #229954;}
+    100% {background: #27AE60;}
+}
+
+@-webkit-keyframes colorchange
+{
+    0%   {background: #145A32;}
+    20%  {background: #196F3D;}
+    40%  {background: #1E8449;}
+    60%  {background: #28B463;}
+    80%  {background: #229954;}
+    100% {background: #27AE60;}
+}
+
+@keyframes float {
+    0% {
+	transform: translatey(0px);
+    }
+    50% {
+	transform: translatey(-17px);
+    }
+    100% {
+	transform: translatey(0px);
+    }
+}
+
+.margin{
+    margin-top: 130px;
+    animation: float 3s ease-in-out infinite;
+}
+
+
+.button1 {background-color: #4CAF50;} /* Green */
+.btn{
+    display: block;
+    color: #fff;
+    background: #0E7FFF;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 4px;
+    font-weight: bold;
+    margin: 2em 0;
+    transition: all ease-in-out .5s;
+}
+
+/**/
+
+.nav {
+    float: right;
+    padding: 20px 0 0 0;
+}
+
+li {
+    float: left; /* makes list horizontal */
+    list-style-type: none;
+    margin: 0 0 0 30px; /* separates 'buttons' */
+}
+
+.a {
+    padding: 10px 15px; /* makes target area bigger */
+    color: #333; /* rgba backup */
+    color: rgba(255,255,255, 0.8);
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 0 1px 1px rgba(0,0,0, 0.3);
+    -webkit-transition: all 0.75s ease-in-out;
+    -moz-transition: all 0.75s ease-in-out;
+    -o-transition: all 0.75s ease-in-out;
+    transition: all 0.75s ease-in-out;
+}
+
+.a:hover, .a:focus {
+	      color: #fff;
+	      background: #fff; /* rgba backup */
+	      background: rgba(255,255,255, 0.2);
+	      -webkit-border-radius: 4px; /* safari & chrome */
+	      -moz-border-radius: 4px; /* firefox */
+	      border-radius: 4px; /* futureproof */
+	  }
+
+/**/
+
+.container-gallery div{
+    display : inline-flex;
+}
+
+.small{
+    height: 100px;
+}
+
+.calypso{
+    color: #fff;
+}
+
+/**/
+
+.ir-arriba {
+    display:none;
+    padding:20px;
+    background:#024959;
+    font-size:20px;
+    color:#fff;
+    cursor:pointer;
+    position: fixed;
+    bottom:20px;
+    right:20px;
+}

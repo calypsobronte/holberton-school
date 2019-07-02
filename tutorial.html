@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="description" content="Héroes en tecnología y educación">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript,Alan Turing,Holberton,Betty,Bill,COBOL,ENIAC">
+    <meta name="author" content="Lina María Montaño Ramírez | Calypso Brontë 🔻🤓🦄">
+    <meta property="og:image" content="https://pbs.twimg.com/media/DwXINpfWkAApAWn.jpg:large">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="shortcut icon" href="calypsobronte.ico">
+    <title>Holberton | Github</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css">
+    <link rel="stylesheet" href="dracula.css">
+
+  </head>
+  <body>
+    <!-- Boton hacia arriba -->
+    <a class="ir-arriba"  javascript:void(0) title="Volver arriba">
+      <span class="fa-stack">
+	<i class="fa fa-circle fa-stack-2x"></i>
+	<i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+    <div >
+      <header>
+	<div class="container">
+	  <h2 class="lone-header">Guía de Github por <a class="calypso" href="calypsobronte.me">Calypso Brontë  🦄 ◬ </a> desde Holberton</h2>
+	</div>
+      </header>
+      <section>
+	<div class="container">
+	  <ul class="docs-nav">
+
+	    <li><strong>1 Introducción</strong></li>
+	    <li><a href="#git" class="cc-active">1.1 ¿Qué es Git?</a></li>
+	    <li><a href="#github" class="cc-active">1.2 ¿Qué es Github?</a></li>
+
+	    <li class="separator"></li>
+	    <li><strong>2 Git</strong></li>
+	    <li><a href="#estado-git" class="cc-active">2.1 Los tres estados de Git</a></li>
+	    <li><a href="#instalacion" class="cc-active">2.2 Instalación</a></li>
+
+	    <li class="separator"></li>
+	    <li><strong>3 Github</strong></li>
+	    <li><a href="#iniciando-github" class="cc-active">3.1 Iniciando con github</a></li>
+	    <li><a href="#configuracion-github" class="cc-active">3.2 Configuracion de Github</a></li>
+
+	    <li class="separator"></li>
+	    <li><strong>Regresar al menú</strong></li>
+	    <li><a class="a" href="index.html">Pagina Principal</a></li>
+	    <li><a class="a" href="tweets.html">Tweets</a></li>
+	    <li><a class="a" href="galeria.html">Galeria</a></li>
+
+	  </ul>
+
+	  <div class="docs-content">
+	    <!--Introducción-->
+	    <h3 id="git">1.1 ¿Qué es Git?</h3>
+	    <p> <strong> Git</strong> es un Sistema de Control de Versiones, más usado en el mundo.
+	      Fue desarrollado por <strong><a href="https://es.wikipedia.org/wiki/Linus_Torvalds">Linus Torvalds</a></strong>  en el 2005
+	      y es un proyecto de <strong>Open Source</strong> y mantenimiento por una amplia comunidad.
+
+	      Git es tan confiable que la  <strong><a href="https://github.com/nasa">NASA</a></strong> la esta utilizando para sus proyectos.</p>
+
+
+	    <h3 id="github">1.2 ¿Qué es Github?</h3>
+	    <p> <strong>GitHub</strong> es un sistema de gestión de proyectos y control de versiones de código,
+	      así como una plataforma de red social diseñada para desarrolladores. GitHub es también uno de los repositorios online más grandes de trabajo colaborativo en todo el mundo.</p>
+	    <!--Git-->
+	    <h3 id="estado-git">2.1 Los tres estados de Git</h3>
+	    <p>Git tiene tres estados principales:</p>
+	    <ul>
+	      <li><strong>Working Directory:</strong> Es al lugar donde se trabajan los archivos.</li>
+	      <li><strong>Staging Area:</strong> Es el área de preparación de los archivos que serán registrados en el repositorio.</li>
+	      <li><strong>Git Repository:</strong> Es el lugar donde se almacena el código de forma segura.</li>
+	    </ul>
+
+	    <h3 id="instalacion">2.2 Instalación</h3>
+	    <p>En linux</p>
+	    <iframe
+	       src="https://carbon.now.sh/embed/?bg=rgba(171%2C%20184%2C%20195%2C%201)&t=seti&wt=none&l=application%2Fx-sh&ds=true&dsyoff=0px&dsblur=0px&wc=false&wa=false&pv=0px&ph=0px&ln=false&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2524%2520apt-get%2520install%2520git%250A"
+	       style="transform:scale(1); width:1024px;"
+	       sandbox="allow-scripts allow-same-origin">
+	    </iframe>
+	    <p>Tienes otro sistema operativo como (Mac o Windows) ingresa al enlace <a href="https://git-scm.com/downloads">Descargas</a></p>
+	    Despues de instalada miramos la <strong>versión</strong>
+	    <iframe
+	       src="https://carbon.now.sh/embed/?bg=rgba(255%2C255%2C255%2C1)&t=seti&wt=none&l=application%2Fx-sh&ds=false&dsyoff=20px&dsblur=68px&wc=false&wa=false&pv=0px&ph=0px&ln=false&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2524%2520git%2520--version"
+	       style="transform:scale(1); width:1024px;"
+	       sandbox="allow-scripts allow-same-origin">
+	    </iframe>
+	    Realizamos una configuracion global
+	    <iframe
+	       src="https://carbon.now.sh/embed/?bg=rgba(255%2C255%2C255%2C1)&t=seti&wt=none&l=application%2Fx-sh&ds=false&dsyoff=20px&dsblur=68px&wc=false&wa=false&pv=0px&ph=0px&ln=false&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%2524%2520git%2520config%2520--global%2520user.email%2520%255Bcalypsobronte%2540calypsobronte.me%255D%250A%2524%2520git%2520config%2520--global%2520user.name%2520%255BLina%2520Mar%25C3%25ADa%2520Monta%25C3%25B1o%2520Ramirez%255D"
+	       style="transform:scale(1); width:1024px;"
+	       sandbox="allow-scripts allow-same-origin">
+	    </iframe>
+	    Iniciar un repositorio vacío en unas carpeta específica.
+	    <iframe
+	       src="https://carbon.now.sh/embed/?bg=rgba(255%2C255%2C255%2C1)&t=seti&wt=none&l=application%2Fx-sh&ds=false&dsyoff=20px&dsblur=68px&wc=false&wa=false&pv=0px&ph=0px&ln=false&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2524%2520git%2520init"
+	       style="transform:scale(1); width:1024px;"
+	       sandbox="allow-scripts allow-same-origin">
+	    </iframe>
+	    Añadir un archivo especifico.
+	    <iframe
+	       src="https://carbon.now.sh/embed/?bg=rgba(255%2C255%2C255%2C1)&t=seti&wt=none&l=application%2Fx-sh&ds=false&dsyoff=20px&dsblur=68px&wc=false&wa=false&pv=0px&ph=0px&ln=false&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2524%2520git%2520add%2520%25E2%2580%259Cnombre_de_archivo%25E2%2580%259D"
+	       style="transform:scale(1); width:1024px;"
+	       sandbox="allow-scripts allow-same-origin">
+	    </iframe>
+	    O podemos añadir todos los archivos del directorio
+	    <iframe
+	       src="https://carbon.now.sh/embed/?bg=rgba(255%2C255%2C255%2C1)&t=seti&wt=none&l=application%2Fx-sh&ds=false&dsyoff=20px&dsblur=68px&wc=false&wa=false&pv=0px&ph=0px&ln=false&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2524%2520git%2520add%2520."
+	       style="transform:scale(1); width:1024px;"
+	       sandbox="allow-scripts allow-same-origin">
+	    </iframe>
+	    Confirmar los cambios realizados.
+	    <iframe
+	       src="https://carbon.now.sh/embed/?bg=rgba(255%2C255%2C255%2C1)&t=seti&wt=none&l=application%2Fx-sh&ds=false&dsyoff=20px&dsblur=68px&wc=false&wa=false&pv=0px&ph=0px&ln=false&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2524%2520git%2520commit%2520%25E2%2580%2593am%2520%25E2%2580%259Cmi%2520primer%2520commit%25E2%2580%259D"
+	       style="transform:scale(1); width:1024px;"
+	       sandbox="allow-scripts allow-same-origin">
+	    </iframe>
+	    Revertir el commit
+	    <iframe
+	       src="https://carbon.now.sh/embed/?bg=rgba(255%2C255%2C255%2C1)&t=seti&wt=none&l=application%2Fx-sh&ds=false&dsyoff=20px&dsblur=68px&wc=false&wa=false&pv=0px&ph=0px&ln=false&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2524%2520git%2520revert%2520%2522commit_aqui%2522"
+	       style="transform:scale(1); width:1024px;"
+	       sandbox="allow-scripts allow-same-origin">
+	    </iframe>
+	    Subir la rama(branch) “master” al servidor remoto.
+	    <iframe
+	       src="https://carbon.now.sh/embed/?bg=rgba(255%2C255%2C255%2C1)&t=seti&wt=none&l=application%2Fx-sh&ds=false&dsyoff=20px&dsblur=68px&wc=false&wa=false&pv=0px&ph=0px&ln=false&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2524%2520git%2520push%2520origin%2520master"
+	       style="transform:scale(1); width:1024px;"
+	       sandbox="allow-scripts allow-same-origin">
+	    </iframe>
+	    Mostrar el estado actual
+	    <iframe
+	       src="https://carbon.now.sh/embed/?bg=rgba(255%2C255%2C255%2C1)&t=seti&wt=none&l=application%2Fx-sh&ds=false&dsyoff=20px&dsblur=68px&wc=false&wa=false&pv=0px&ph=0px&ln=false&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2524%2520git%2520status"
+	       style="transform:scale(1); width:1024px;"
+	       sandbox="allow-scripts allow-same-origin">
+	    </iframe>
+
+
+	    <!--Github-->
+	    <h3 id="iniciando-github">3.1 Iniciando con github</h3>
+	    Creamos una cuenta en <a href="">Crear Repositorio</a>
+	    <img src="https://live.staticflickr.com/65535/48175458067_eed5c11448_b.jpg" alt=""/>
+	    Despues de crearla podemos subir nuestros proyectos
+	    <img src="https://live.staticflickr.com/65535/48175412181_af989a1c70_b.jpg" alt="">
+	    Creemos un repositorio lo podemos manejar
+	    <li>Privado (este es pago)</li>
+	    <li>Publico</li>
+	    <img src="https://live.staticflickr.com/65535/48175496822_c6b56305f2_b.jpg" alt="">
+	    Asi nos quedara
+	    <img src="https://live.staticflickr.com/65535/48175513152_2290c3e84d_b.jpg" alt="">
+
+	    <h3 id="configuracion-github">3.2 Configuracion de Github</h3>
+	    podemos clonarlo
+	    <iframe
+	       src="https://carbon.now.sh/embed/?bg=rgba(255%2C255%2C255%2C1)&t=seti&wt=none&l=application%2Fx-sh&ds=false&dsyoff=20px&dsblur=68px&wc=false&wa=false&pv=0px&ph=0px&ln=false&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2524%2520git%2520clone%2520https%253A%252F%252Fgithub.com%252Fcalypsobronte%252Fpruebaholberton.git"
+	       style="transform:scale(1); width:1024px;"
+	       sandbox="allow-scripts allow-same-origin">
+	    </iframe>
+	    o si ya lo tenemos un proyecto adelantado hacemos los siguiente para subir los archivos
+	    <iframe
+	       src="https://carbon.now.sh/embed/?bg=rgba(255%2C255%2C255%2C1)&t=seti&wt=none&l=application%2Fx-sh&ds=false&dsyoff=20px&dsblur=68px&wc=false&wa=false&pv=0px&ph=0px&ln=false&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2524%2520git%2520init%2520%250A%2524%2520git%2520add%2520.%250A%2524%2520git%2520commit%2520-m%2520%2522mi%2520primer%2520commit%2522%2520%250A%2524%2520git%2520remote%2520add%2520origin%2520https%253A%252F%252Fgithub.com%252Fcalypsobronte%252Fpruebaholberton.git%250A%2524%2520git%2520push%2520-u%2520origin%2520master"
+	       style="transform:scale(1); width:1024px;"
+	       sandbox="allow-scripts allow-same-origin">
+	    </iframe>
+
+
+	  </div>
+	</div>
+      </section>
+      <footer>
+	<div>
+	  Made by <a href="https://twitter.com/calypsobronte" target="_blank">Lina María Montaño Ramirez</a> for <a href="https://www.holbertonschool.com" target="_blank">Holberton School</a>.
+	</div>
+      </footer>
+      <button ><li><a href="#git" class="cc-active">Inicio</a></li></button>
+    <section>
+      <div>
+	<!--Twitter-->
+	<a class="twitter-share-button"
+	   href="https://twitter.com/intent/tweet"
+	   data-size="large"
+	   data-text="Tutorial, @holbertonschool @HolbertonCOL"
+	   data-url="http://54.145.243.92"
+	   data-hashtags="Holberton,WomenInSTEM,WomenInTech,learntocode,HappySaturday,programming,coding,100DaysOfCode"
+	   data-via="calypsobronte"
+	   data-related="twitterapi,twitter">
+
+	</a>
+	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+	<!--Facebook-->
+	<div id="fb-root"></div>
+	<script>
+	  (function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = 'https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v3.2&appId=1899514836958307&autoLogAppEvents=1';
+	  fjs.parentNode.insertBefore(js, fjs);
+	  }(document, 'script', 'facebook-jssdk'));
+	</script>
+	<div class="fb-share-button" data-href="http://54.145.243.92" data-layout="button" data-size="large" data-mobile-iframe="true">
+	  <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F54.145.243.92&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">
+	    Compartir</a></div>
+      </div>
+    </section>
+      <section>
+	<aside>
+	  <div id="disqus_thread"></div>
+	  <script>
+
+	    /**
+	    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+	    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+	    /*
+	    var disqus_config = function () {
+	    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+	    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+	    };
+	    */
+	    (function() { // DON'T EDIT BELOW THIS LINE
+	    var d = document, s = d.createElement('script');
+	    s.src = 'https://calypsobronte.disqus.com/embed.js';
+	    s.setAttribute('data-timestamp', +new Date());
+	    (d.head || d.body).appendChild(s);
+	    })();
+	  </script>
+	  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+	</aside>
+      </section>
+    </div>
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css&skin=sunburst"></script>
+    <script>
+      $(document).ready(function() {
+      $('pre code').each(function(i, block) {
+      hljs.highlightBlock(block);
+      });
+      });
+    </script>
+
+  </body>
+  </html>

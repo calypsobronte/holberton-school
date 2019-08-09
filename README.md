@@ -7,3 +7,6 @@ Servidor
 Nueva vista -> http://bit.ly/HolbertonSchool
 
 Postulacion en Holberton
+
+#License
+[MIT](https://github.com/calypsobronte/holberton-school/blob/master/LICENSE)
